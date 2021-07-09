@@ -1,0 +1,59 @@
+@import './styles/mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+  @include respond(phone) {
+    font-size: 43.75%; //1rem = 7px
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.section__heading {
+  padding-top: 10rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #45474a;
+  font-family: inherit;
+  margin-bottom: 5rem;
+}
+
+.header-section {
+  background-color: #2c313d;
+  color: #fff;
+  height: 5rem;
+  border-bottom: 3px solid #05c2c9;
+  display: flex;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5rem;
+    font-size: 1.6rem;
+    align-self: center;
+  }
+}

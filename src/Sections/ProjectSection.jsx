@@ -40,12 +40,12 @@ const ProjectSection = () => {
     },
   ];
   return (
-    <div className='project-section'>
+    <div className='project-section' id='projects-section'>
       <h1 className='section__heading'>Projects</h1>
       <div className='container'>
         <div className='projects__container'>
           {projects.map((project) => (
-            <Project project={project} />
+            <Project key={project.name} project={project} />
           ))}
         </div>
       </div>

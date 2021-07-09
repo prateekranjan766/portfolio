@@ -1,3 +1,4 @@
+@import './mixins.scss';
 .about-section {
   min-height: 100vh;
 
@@ -6,6 +7,10 @@
     flex-wrap: wrap;
     width: 75%;
     margin: auto;
+    @include respond(tab-land) {
+      width: 90%;
+      padding-bottom: 5rem;
+    }
 
     &--profile {
       display: flex;
@@ -14,6 +19,10 @@
       width: 35%;
       margin-right: 15rem;
 
+      @include respond(tab-land) {
+        width: 100%;
+        margin-right: 0;
+      }
       &-pic {
         height: 45vh;
         clip-path: polygon(
@@ -29,6 +38,9 @@
       &-details {
         margin-top: 3rem;
         text-align: center;
+        @include respond(tab-land) {
+          margin-bottom: 3rem;
+        }
         h2 {
           font-size: 3rem;
           font-weight: 500;

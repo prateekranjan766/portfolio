@@ -9,19 +9,25 @@ const Project = ({ project }) => {
       onMouseOver={() => setShowImage(false)}
       onMouseLeave={() => setShowImage(true)}
     >
-      {showImage == true ? (
-        <img src={project.image} className='project-image' />
+      {showImage === true ? (
+        <img src={project.image} className='project-image' alt={project.name} />
       ) : (
         <div className='project-info'>
           <p className='project-info__name'>{project.name}</p>
           <p className='project-info__stack'>{project.techStack}</p>
           <p className='project-info__description'>{project.description}</p>
           <div className='project-btn-div'>
-            <a href={project.url} target='_blank' className='project-btn'>
+            <a
+              href={project.url}
+              target='_blank'
+              rel='noreferrer'
+              className='project-btn'
+            >
               Website
             </a>
             <a
               href={project.repository}
+              rel='noreferrer'
               target='_blank'
               className='project-btn'
             >

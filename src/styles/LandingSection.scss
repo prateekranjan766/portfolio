@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .landing-section {
   background-image: url('../background-photo.png');
   min-height: 100vh;
@@ -5,11 +7,16 @@
   font-size: 4rem;
   text-align: center;
   position: relative;
+
   &__text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
     &--name {
       // color: #e31b6d;
       color: #01a1a7;
@@ -19,6 +26,7 @@
 
   &__button {
     font-family: inherit;
+    display: inline-block;
     background-color: transparent;
     color: #ffffff;
     border: 3px solid #ffffff;
@@ -28,7 +36,10 @@
     padding: 1rem 2rem;
     margin-top: 2rem;
     transition: all 0.8s;
-
+    text-decoration: none;
+    @include respond(phone) {
+      font-size: 3rem;
+    }
     i {
       padding-left: 1rem;
       position: relative;
