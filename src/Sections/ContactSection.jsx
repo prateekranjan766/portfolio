@@ -3,7 +3,7 @@ import '../styles/ContactSection.scss';
 
 const ContactSection = () => {
   return (
-    <div className='contact__section' id='contact-section'>
+    <section className='contact__section' id='contact-section'>
       <p
         className='section__heading'
         style={{ color: '#fff', paddingBottom: '7rem' }}
@@ -45,7 +45,7 @@ const ContactSection = () => {
         </a>
       </div>
       <p>Handcrafted by me &copy; 2021</p>
-    </div>
+    </section>
   );
 };
 

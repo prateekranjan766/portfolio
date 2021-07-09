@@ -5,7 +5,7 @@ import '../styles/LandingSection.scss';
 
 const LandingSection = () => {
   return (
-    <div className='landing-section' id='landing-section'>
+    <section className='landing-section' id='landing-section'>
       <div className='bg-video'>
         <video className='bg-video__content' autoPlay muted loop>
           <source src={bgVideo} type='video/mp4'></source>
@@ -27,7 +27,7 @@ const LandingSection = () => {
           View my work <i className='fas fa-arrow-right'></i>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

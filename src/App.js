@@ -5,12 +5,12 @@ import ProjectSection from './Sections/ProjectSection';
 import ContactSection from './Sections/ContactSection';
 const App = () => {
   return (
-    <div>
+    <main>
       <LandingSection />
       <AboutSection />
       <ProjectSection />
       <ContactSection />
-    </div>
+    </main>
   );
 };
 

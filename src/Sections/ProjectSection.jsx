@@ -40,7 +40,7 @@ const ProjectSection = () => {
     },
   ];
   return (
-    <div className='project-section' id='projects-section'>
+    <section className='project-section' id='projects-section'>
       <h1 className='section__heading'>Projects</h1>
       <div className='container'>
         <div className='projects__container'>
@@ -49,7 +49,7 @@ const ProjectSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
