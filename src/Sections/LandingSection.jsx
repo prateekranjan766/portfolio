@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import bgVideo from '../bgVideo.mp4';
 import '../styles/LandingSection.scss';
 
 const LandingSection = () => {
   return (
     <div className='landing-section' id='landing-section'>
+      <div className='bg-video'>
+        <video className='bg-video__content' autoPlay muted loop>
+          <source src={bgVideo} type='video/mp4'></source>
+        </video>
+      </div>
       <div className='landing-section__text'>
         <p>
           Hello, I'm{' '}

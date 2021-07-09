@@ -1,7 +1,21 @@
 @import './mixins.scss';
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  &__content {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
+
 .landing-section {
-  background-image: url('../background-photo.png');
+  // background-image: url('../background-photo.png');
   min-height: 100vh;
   color: #ffffff;
   font-size: 4rem;
