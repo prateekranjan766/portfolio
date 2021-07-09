@@ -1,0 +1,47 @@
+.about-section {
+  height: 100vh;
+
+  &__main {
+    display: flex;
+    width: 75%;
+    margin: auto;
+
+    &--profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 35%;
+      margin-right: 15rem;
+
+      &-pic {
+        height: 45vh;
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
+        );
+      }
+
+      &-details {
+        margin-top: 3rem;
+        text-align: center;
+        h2 {
+          font-size: 3rem;
+          font-weight: 500;
+          color: #45474a;
+        }
+        p {
+          padding-top: 1rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &--skills {
+      flex-grow: 1;
+    }
+  }
+}

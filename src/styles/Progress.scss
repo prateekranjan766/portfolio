@@ -1,0 +1,32 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  &__key {
+    padding: 1rem;
+    background-color: #05c2c9;
+    color: #fff;
+    width: 22rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__value {
+    position: relative;
+    margin-left: auto;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #eeeeee;
+
+    &--text {
+      z-index: 100;
+      color: #45474a;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(50%) translateX(-50%);
+    }
+  }
+}
