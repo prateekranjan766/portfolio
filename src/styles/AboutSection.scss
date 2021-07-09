@@ -1,8 +1,9 @@
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
 
   &__main {
     display: flex;
+    flex-wrap: wrap;
     width: 75%;
     margin: auto;
 

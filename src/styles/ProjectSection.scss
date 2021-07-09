@@ -20,7 +20,7 @@
 .project-image {
   width: 100%;
   object-fit: cover;
-  animation: 'inAnimation 250ms ease-in';
+  animation: project-img 0.5s ease;
 }
 .project-info {
   display: flex;
@@ -34,15 +34,51 @@
     font-size: 2.5rem;
     font-weight: 500;
     color: #01a1a7;
+    animation: project-text 0.5s ease;
   }
   &__stack {
     font-size: 2rem;
     margin-bottom: 2rem;
+    animation: project-text 0.5s ease;
   }
   &__description {
     font-size: 1.8rem;
     margin-bottom: 3rem;
+    animation: project-text 0.5s ease;
   }
+}
+@keyframes project-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes project-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes project-btns {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.project-btn-div {
+  animation: project-btns 0.5s ease;
 }
 .project-btn {
   border: 3px solid #01a1a7;
@@ -55,6 +91,7 @@
   text-decoration: none;
   margin-left: 1rem;
   color: #333;
+
   &:hover {
     background-color: #01a1a7;
     color: #fff;
