@@ -49,11 +49,17 @@ body {
   top: 0;
   z-index: 10000;
 
-  a {
+  &__link {
     text-decoration: none;
     color: #fff;
     margin-left: 5rem;
     font-size: 1.6rem;
     align-self: center;
+    cursor: pointer;
   }
+}
+
+.active {
+  color: #05c2c9;
+  font-weight: 600;
 }

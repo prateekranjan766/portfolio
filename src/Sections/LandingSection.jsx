@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import '../styles/LandingSection.scss';
 
 const LandingSection = () => {
@@ -11,9 +12,14 @@ const LandingSection = () => {
           <br />
           I'm a full-stack web developer.
         </p>
-        <a href='#about-section' className='landing-section__button'>
+        <Link
+          to='about-section'
+          className='landing-section__button'
+          smooth={true}
+          duration={800}
+        >
           View my work <i className='fas fa-arrow-right'></i>
-        </a>
+        </Link>
       </div>
     </div>
   );
