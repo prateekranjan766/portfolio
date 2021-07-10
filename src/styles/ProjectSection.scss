@@ -31,7 +31,7 @@
 .project-image {
   width: 100%;
   object-fit: cover;
-  animation: project-img 0.5s ease;
+  animation: project-img 0.5s linear;
 }
 .project-info {
   display: flex;

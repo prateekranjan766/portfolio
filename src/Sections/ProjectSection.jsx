@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Components/Project';
+import { Fade } from 'react-reveal';
 import '../styles/ProjectSection.scss';
 const ProjectSection = () => {
   const projects = [
@@ -41,7 +42,10 @@ const ProjectSection = () => {
   ];
   return (
     <section className='project-section' id='projects-section'>
-      <h1 className='section__heading'>Projects</h1>
+      <Fade right>
+        <h1 className='section__heading'>Projects</h1>
+      </Fade>
+
       <div className='container'>
         <div className='projects__container'>
           {projects.map((project) => (
