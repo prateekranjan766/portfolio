@@ -55,6 +55,45 @@
 
     &--skills {
       flex-grow: 1;
+
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.coding {
+  width: 75%;
+  margin: auto;
+  padding-top: 5rem;
+  color: #45474a;
+  @include respond(tab-land) {
+    width: 90%;
+    padding-bottom: 5rem;
+  }
+  p {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    flex-wrap: wrap;
+    &--item {
+      background-color: #05c2c9;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 6px;
+      transition: all 0.3s;
+      transform: translateY(0);
+      letter-spacing: 0.175rem;
+      &:hover {
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+        transform: translateY(-0.2rem);
+      }
     }
   }
 }
