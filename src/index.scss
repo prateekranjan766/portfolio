@@ -63,3 +63,29 @@ body {
   color: #05c2c9;
   font-weight: 600;
 }
+
+.loader {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  color: #fff;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  animation: loading-rotate infinite 0.8s linear;
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
